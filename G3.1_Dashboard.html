@@ -121,6 +121,26 @@
   .callout.info { background: var(--blue-bg); border-color: var(--blue); }
   .callout.info h3 { color: var(--blue); }
 
+  /* Recommendation cards */
+  .rec-section { margin-bottom: 16px; }
+  .rec-section-title { font-size: 14px; font-weight: 700; color: var(--primary); margin-bottom: 10px; padding-bottom: 6px; border-bottom: 2px solid var(--primary); }
+  .rec-grid { display: grid; gap: 10px; }
+  .rec-item { display: grid; grid-template-columns: 32px 1fr; gap: 10px; padding: 14px 16px; background: white; border: 1px solid var(--gray-border); border-radius: 8px; font-size: 13px; line-height: 1.5; }
+  .rec-num { width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: white; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+  .rec-title { font-weight: 700; color: var(--text); margin-bottom: 2px; }
+  .rec-detail { color: var(--gray); font-size: 12px; }
+  .rec-impact { display: inline-block; margin-top: 6px; padding: 2px 10px; border-radius: 10px; font-size: 10px; font-weight: 700; }
+  .rec-impact.high { background: #fdecea; color: var(--red); }
+  .rec-impact.med { background: #fef9e7; color: var(--yellow); }
+  .rec-impact.quick { background: #eafaf1; color: var(--green); }
+  .rec-before-after { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; align-items: start; margin-top: 8px; padding: 10px; background: var(--gray-light); border-radius: 6px; font-size: 12px; }
+  .rec-arrow { color: var(--primary); font-size: 18px; font-weight: 800; padding-top: 2px; }
+  .rec-example-label { font-weight: 700; font-size: 10px; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+  .rec-example-label.before { color: var(--red); }
+  .rec-example-label.after { color: var(--green); }
+  .rec-summary-bar { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-bottom: 20px; }
+  .rec-summary-item { text-align: center; padding: 14px; border-radius: 8px; }
+
   /* Explainer key */
   .key-box { background: var(--gray-light); border: 1px solid var(--gray-border); border-radius: 10px; padding: 20px 24px; margin-bottom: 20px; }
   .key-box h3 { font-size: 14px; font-weight: 700; color: var(--primary); margin-bottom: 12px; }
@@ -470,6 +490,209 @@
     <div class="callout info">
       <h3>Bright Spot: Technical Quality</h3>
       <p>While the cognitive complexity is low, many questions are technically well-constructed — scientifically accurate with plausible, diagnostic distractors. The issue isn't that the questions are <em>wrong</em>, it's that they test <em>the wrong things</em> (recall instead of sense-making).</p>
+    </div>
+  </div>
+
+  <!-- MAP Alignment Recommendations -->
+  <div class="card">
+    <h2>Recommendations: Aligning G3.1 to MAP Expectations</h2>
+    <div class="card-subtitle">Specific changes to prepare students for the kinds of thinking MAP Science requires. MAP items are designed around Achieve's framework — students who practice only recall will be unprepared for MAP's emphasis on reasoning, data analysis, and three-dimensional sense-making.</div>
+
+    <!-- Impact summary -->
+    <div class="rec-summary-bar">
+      <div class="rec-summary-item" style="background:#fdecea; border:1px solid var(--red);">
+        <div style="font-size:11px; font-weight:600; color:var(--red);">REMOVE OR REPLACE</div>
+        <div style="font-size:28px; font-weight:800; color:var(--red);">10</div>
+        <div style="font-size:11px; color:var(--gray);">questions (redundant or recall-only)</div>
+      </div>
+      <div class="rec-summary-item" style="background:#fef9e7; border:1px solid var(--yellow);">
+        <div style="font-size:11px; font-weight:600; color:var(--yellow);">REDESIGN</div>
+        <div style="font-size:28px; font-weight:800; color:var(--yellow);">12</div>
+        <div style="font-size:11px; color:var(--gray);">questions (add phenomena + reasoning)</div>
+      </div>
+      <div class="rec-summary-item" style="background:#eafaf1; border:1px solid var(--green);">
+        <div style="font-size:11px; font-weight:600; color:var(--green);">KEEP AS-IS</div>
+        <div style="font-size:28px; font-weight:800; color:var(--green);">8</div>
+        <div style="font-size:11px; color:var(--gray);">questions (already Low Guided or better)</div>
+      </div>
+    </div>
+
+    <!-- Priority 1: Eliminate redundancy -->
+    <div class="rec-section">
+      <div class="rec-section-title">Priority 1: Eliminate Redundancy to Make Room for Better Questions</div>
+      <div class="rec-grid">
+        <div class="rec-item">
+          <div class="rec-num">1</div>
+          <div>
+            <div class="rec-title">Cut 4 of 5 inherited-trait recall questions</div>
+            <div class="rec-detail">Q3, Q5, Q11, Q12, and Q14 all test the same concept (inherited vs. acquired traits) at the same recall level. <strong>Keep Q11</strong> (it includes an observation context) and remove Q3, Q5, Q12, Q14. This frees up 4 slots — 13% of the test — for missing standards and higher-complexity items.</div>
+            <span class="rec-impact high">Frees 4 question slots</span>
+          </div>
+        </div>
+        <div class="rec-item">
+          <div class="rec-num">2</div>
+          <div>
+            <div class="rec-title">Merge duplicate pairs</div>
+            <div class="rec-detail"><strong>Weather vs. Climate (Q4 &amp; Q26):</strong> Keep Q4, remove Q26. <strong>Fur = warmth (Q6 &amp; Q23):</strong> Keep Q6, remove Q23. <strong>Magnet recall (Q25 &amp; Q27):</strong> Remove both — Q18 already covers magnets well with data analysis. This frees 4 more slots.</div>
+            <span class="rec-impact high">Frees 4 question slots</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Priority 2: Add phenomena -->
+    <div class="rec-section">
+      <div class="rec-section-title">Priority 2: Anchor Questions in Phenomena (What MAP Actually Tests)</div>
+      <div class="rec-grid">
+        <div class="rec-item">
+          <div class="rec-num">3</div>
+          <div>
+            <div class="rec-title">Add a scenario before every question</div>
+            <div class="rec-detail">MAP items almost always begin with a real-world situation students must figure out. Currently, 60% of G3.1 questions jump straight to "What is...?" or "Which is...?" with no context. Every question should start with an observation, data set, or situation that needs explaining.</div>
+            <div class="rec-before-after">
+              <div>
+                <div class="rec-example-label before">Current (Scripted)</div>
+                "Which is an example of climate, NOT weather?"
+              </div>
+              <div class="rec-arrow">&rarr;</div>
+              <div>
+                <div class="rec-example-label after">Redesigned (High Guided)</div>
+                "Maya's family visits grandma in Maine every July. It's always warm. But her friend says Maine has freezing winters. Maya wonders if Maine is warm or cold. Using the temperature data table below, which claim about Maine's climate is best supported?"
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rec-item">
+          <div class="rec-num">4</div>
+          <div>
+            <div class="rec-title">Require students to USE evidence, not just recall it</div>
+            <div class="rec-detail">MAP expects students to analyze data tables, diagrams, and observations — then construct or select an explanation. Replace "What is the function of...?" with "Based on this data, which explanation...?"</div>
+            <div class="rec-before-after">
+              <div>
+                <div class="rec-example-label before">Current (Scripted)</div>
+                "What is the primary role of an Arctic fox's thick fur and body fat?"
+              </div>
+              <div class="rec-arrow">&rarr;</div>
+              <div>
+                <div class="rec-example-label after">Redesigned (High Guided)</div>
+                "Scientists measured the body temperatures of Arctic foxes at different outside temperatures (see table). Based on this data, how do the fox's fur and body fat help it survive when the outside temperature drops to &minus;40°C?"
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Priority 3: Integrate three dimensions -->
+    <div class="rec-section">
+      <div class="rec-section-title">Priority 3: Make Questions Three-Dimensional (SEP + DCI + CCC)</div>
+      <div class="rec-grid">
+        <div class="rec-item">
+          <div class="rec-num">5</div>
+          <div>
+            <div class="rec-title">Engage Crosscutting Concepts (CCC) — currently the weakest indicator at 1.7/5</div>
+            <div class="rec-detail">MAP items routinely require students to apply lenses like <em>Cause and Effect</em>, <em>Patterns</em>, or <em>Structure and Function</em>. Currently almost no G3.1 question requires CCC thinking. Add prompts like: "What pattern do you notice?" "What is the cause of...?" "How does the structure help the organism?"</div>
+            <span class="rec-impact high">Biggest single-indicator gap</span>
+          </div>
+        </div>
+        <div class="rec-item">
+          <div class="rec-num">6</div>
+          <div>
+            <div class="rec-title">Add Science &amp; Engineering Practices (SEPs) beyond recall</div>
+            <div class="rec-detail">MAP expects students to <em>do</em> practices: analyze data, construct explanations, argue from evidence, plan investigations. Currently, most G3.1 questions only require "remembering." Add questions where students must interpret a graph, evaluate competing claims, or identify what evidence supports a conclusion.</div>
+            <div class="rec-before-after">
+              <div>
+                <div class="rec-example-label before">Current (Scripted)</div>
+                "Which are the producers in this desert food chain?"
+              </div>
+              <div class="rec-arrow">&rarr;</div>
+              <div>
+                <div class="rec-example-label after">Redesigned (Doing Science)</div>
+                "A scientist removes all the shrubs from a small area of desert. Predict what will happen to the lizard population over the next year. Use the food web diagram to support your prediction with evidence."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Priority 4: Fix domain balance -->
+    <div class="rec-section">
+      <div class="rec-section-title">Priority 4: Rebalance Content Domains to Match NGSS Coverage</div>
+      <div class="rec-grid">
+        <div class="rec-item">
+          <div class="rec-num">7</div>
+          <div>
+            <div class="rec-title">Use the 8 freed slots to fill domain gaps</div>
+            <div class="rec-detail">After removing redundant questions, use the freed slots to add coverage of under-represented standards. Suggested additions:
+              <ul style="margin:8px 0 0 16px; color:var(--gray);">
+                <li><strong style="color:#d35400;">+2 ESS:</strong> Add a weather data interpretation question (3-ESS2-1) and a natural hazard engineering question (3-ESS3-1)</li>
+                <li><strong style="color:#8e44ad;">+2 ETS:</strong> Add an engineering design comparison question (3-5-ETS1-1) and an iterative testing question (3-5-ETS1-3)</li>
+                <li><strong style="color:#5b6abf;">+1 PS:</strong> Add a motion/force prediction question with data (3-PS2-2)</li>
+                <li><strong style="color:#16a085;">+3 LS:</strong> Replace removed inheritance recall items with higher-complexity LS questions — e.g., fossil evidence analysis (3-LS4-1), environment-trait interaction (3-LS3-2), or organism survival arguments (3-LS4-3)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Priority 5: Add multi-part and constructed response -->
+    <div class="rec-section">
+      <div class="rec-section-title">Priority 5: Add Question Types That Mirror MAP Format</div>
+      <div class="rec-grid">
+        <div class="rec-item">
+          <div class="rec-num">8</div>
+          <div>
+            <div class="rec-title">Include 3-5 multi-part item sets (like Q19-Q20)</div>
+            <div class="rec-detail">MAP frequently uses linked questions where Part A asks students to identify a pattern or problem, and Part B asks them to explain or apply it. Q19-Q20 (grabber tool) is the only example on G3.1 — it's also one of the stronger items. Model more questions after this format.</div>
+            <span class="rec-impact med">Mirrors MAP item design</span>
+          </div>
+        </div>
+        <div class="rec-item">
+          <div class="rec-num">9</div>
+          <div>
+            <div class="rec-title">Include at least 2 "Doing Science" level questions</div>
+            <div class="rec-detail">Currently 0% of the test is at the highest complexity level (target: 5-10%). Add 2 questions where students must construct an explanation from novel data, design a simple investigation, or evaluate competing models. Q30 (forest mice) is close — push 2 more questions to this level. These are the items that most differentiate students on MAP.</div>
+            <span class="rec-impact high">Currently at 0% vs. 5-10% target</span>
+          </div>
+        </div>
+        <div class="rec-item">
+          <div class="rec-num">10</div>
+          <div>
+            <div class="rec-title">Add data representations: tables, graphs, and diagrams students must interpret</div>
+            <div class="rec-detail">MAP embeds data in almost every item cluster. G3.1 has very few questions requiring data interpretation (only Q18, Q21, Q28). Add temperature tables, bar graphs of animal populations, diagrams of magnetic fields, or weather data charts. Students should practice reading and using data, not just recalling facts about it.</div>
+            <span class="rec-impact med">Builds critical MAP skill</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projected impact -->
+    <div style="background:var(--primary-light); border:1px solid var(--primary); border-radius:8px; padding:16px 20px; margin-top:8px;">
+      <h3 style="font-size:14px; color:var(--primary); margin-bottom:8px;">Projected Impact If All Recommendations Are Implemented</h3>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:12px; font-size:13px;">
+        <div>
+          <div style="font-weight:700; color:var(--gray); font-size:11px;">SCRIPTED</div>
+          <div><span style="color:var(--red); font-weight:700;">60%</span> <span style="color:var(--gray);">&rarr;</span> <span style="color:var(--green); font-weight:700;">~20%</span></div>
+          <div style="font-size:11px; color:var(--gray);">within target (20-30%)</div>
+        </div>
+        <div>
+          <div style="font-weight:700; color:var(--gray); font-size:11px;">LOW GUIDED</div>
+          <div><span style="color:var(--yellow); font-weight:700;">37%</span> <span style="color:var(--gray);">&rarr;</span> <span style="color:var(--green); font-weight:700;">~43%</span></div>
+          <div style="font-size:11px; color:var(--gray);">within target (40-50%)</div>
+        </div>
+        <div>
+          <div style="font-weight:700; color:var(--gray); font-size:11px;">HIGH GUIDED</div>
+          <div><span style="color:var(--red); font-weight:700;">3%</span> <span style="color:var(--gray);">&rarr;</span> <span style="color:var(--green); font-weight:700;">~27%</span></div>
+          <div style="font-size:11px; color:var(--gray);">within target (20-30%)</div>
+        </div>
+        <div>
+          <div style="font-weight:700; color:var(--gray); font-size:11px;">DOING SCIENCE</div>
+          <div><span style="color:var(--red); font-weight:700;">0%</span> <span style="color:var(--gray);">&rarr;</span> <span style="color:var(--green); font-weight:700;">~10%</span></div>
+          <div style="font-size:11px; color:var(--gray);">within target (5-10%)</div>
+        </div>
+      </div>
     </div>
   </div>
 
