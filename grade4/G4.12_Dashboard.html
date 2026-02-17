@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G4.12 Evaluation Dashboard — Actual vs. Achieve Targets</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<div class="header">
+  <h1>Assessment Quality Dashboard</h1>
+  <div class="header-sub">Alpha Standardized Science G4.12 &mdash; 22 Questions &mdash; Evaluated Against Achieve/MAP Cognitive Complexity Framework</div>
+</div>
+
+<div class="container">
+
+  <a href="../index.html" class="back-link">&larr; Back to Grade 4 Overview</a>
+
+  <!-- Top stats -->
+  <div class="stats-row">
+    <div class="stat-card">
+      <div class="stat-number" style="color:var(--red);">32%</div>
+      <div class="stat-label">Scripted</div>
+      <div class="stat-sub">7 of 22 questions</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number" style="color:var(--yellow);">2.43</div>
+      <div class="stat-label">Avg Complexity</div>
+      <div class="stat-sub">out of 5.0</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number" style="color:var(--green);">5%</div>
+      <div class="stat-label">Doing Science</div>
+      <div class="stat-sub">target: 5-10%</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number" style="color:var(--green);">1</div>
+      <div class="stat-label">Strong Question</div>
+      <div class="stat-sub">Q12 rated "Good"</div>
+    </div>
+  </div>
+
+  <!-- Achieve DOK callout -->
+  <div class="callout">
+    <h3>Achieve Standard: 0% DOK1 Items</h3>
+    <p>Achieve's criteria state that high-quality NGSS-aligned assessments should contain <strong>0% DOK Level 1 (recall) tasks</strong>. On this assessment, an estimated <strong>32% of items are at DOK1</strong> (all 7 Scripted items). While this is notably better than many G3 assessments, it still exceeds Achieve's target. The remaining 64% at Low Guided and 5% at Doing Science show this test engages more reasoning than most in the series, but no items reach High Guided complexity.</p>
+  </div>
+
+  <!-- Complexity Level Key -->
+  <div class="key-box">
+    <h3>What Do the Complexity Levels Mean?</h3>
+    <p style="font-size:12px; color:var(--gray); margin-bottom:12px;">From Achieve's <em>Framework to Evaluate the Cognitive Complexity of Science Assessment Tasks</em> (2019). Each question is classified based on how students are expected to think.</p>
+    <div class="key-grid two-col">
+      <div class="key-item">
+        <div class="key-dot" style="background:var(--red);"></div>
+        <div><span class="key-label" style="color:var(--red);">Scripted (Recall)</span><br><span class="key-desc">Student recalls a fact, definition, or formula. No reasoning required. Example: "What is the function of a root?" These are DOK Level 1 tasks. Achieve says NGSS-aligned tests should have <strong>0%</strong> of these.</span></div>
+      </div>
+      <div class="key-item">
+        <div class="key-dot" style="background:var(--yellow);"></div>
+        <div><span class="key-label" style="color:var(--yellow);">Low Guided (Application)</span><br><span class="key-desc">Student applies a known concept to a familiar scenario. Some reasoning, but the path is clear. Example: "A cart is heavy. Which action makes it easier to move?" Target: 40-50% of assessment.</span></div>
+      </div>
+      <div class="key-item">
+        <div class="key-dot" style="background:var(--blue);"></div>
+        <div><span class="key-label" style="color:var(--blue);">High Guided (Transfer)</span><br><span class="key-desc">Student applies understanding to a new or unfamiliar situation. Must integrate multiple ideas and make sense of data or evidence. Example: "Given this data table, which claim about magnet strength is best supported?" Target: 20-30%.</span></div>
+      </div>
+      <div class="key-item">
+        <div class="key-dot" style="background:var(--green);"></div>
+        <div><span class="key-label" style="color:var(--green);">Doing Science (Authentic)</span><br><span class="key-desc">Student engages in genuine scientific reasoning — analyzing novel data, constructing explanations, designing investigations. No single "right path." Example: "A population of mice changed color over 10 years. Use the evidence to explain why." Target: 5-10%.</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gap Analysis -->
+  <div class="card">
+    <h2>Gap Analysis: Actual vs. Target</h2>
+    <div class="card-subtitle">How far the assessment is from Achieve's recommended distribution</div>
+    <div class="gap-row" style="border-bottom:none; padding-bottom:0;">
+      <div class="gap-label" style="font-size:11px; color:var(--gray);">CATEGORY</div>
+      <div style="display:flex; justify-content:space-between; font-size:11px; color:var(--gray);"><span>0%</span><span>25%</span><span>50%</span><span>75%</span><span>100%</span></div>
+      <div style="font-size:11px; color:var(--gray); text-align:center;">GAP</div>
+    </div>
+    <div class="gap-row">
+      <div class="gap-label" style="color:var(--red);">Scripted</div>
+      <div class="gap-bar-container">
+        <div class="gap-bar-actual scripted" style="width:32%; background:var(--red);border-radius:6px;"></div>
+        <div class="gap-bar-target" style="left:20%; width:10%;"></div>
+        <div style="position:absolute;top:-14px;left:25%;transform:translateX(-50%);font-size:10px;color:var(--gray);">target 20-30%</div>
+      </div>
+      <div class="gap-delta over">+7% over</div>
+    </div>
+    <div class="gap-row">
+      <div class="gap-label" style="color:var(--yellow);">Low Guided</div>
+      <div class="gap-bar-container">
+        <div class="gap-bar-actual" style="width:64%; background:var(--yellow);border-radius:6px;"></div>
+        <div class="gap-bar-target" style="left:40%; width:10%;"></div>
+        <div style="position:absolute;top:-14px;left:45%;transform:translateX(-50%);font-size:10px;color:var(--gray);">target 40-50%</div>
+      </div>
+      <div class="gap-delta over">+19% over</div>
+    </div>
+    <div class="gap-row">
+      <div class="gap-label" style="color:var(--blue);">High Guided</div>
+      <div class="gap-bar-container">
+        <div class="gap-bar-actual" style="width:0%; background:var(--blue);border-radius:6px;min-width:2px;"></div>
+        <div class="gap-bar-target" style="left:20%; width:10%;"></div>
+        <div style="position:absolute;top:-14px;left:25%;transform:translateX(-50%);font-size:10px;color:var(--gray);">target 20-30%</div>
+      </div>
+      <div class="gap-delta under">-25% under</div>
+    </div>
+    <div class="gap-row">
+      <div class="gap-label" style="color:var(--green);">Doing Science</div>
+      <div class="gap-bar-container">
+        <div class="gap-bar-actual" style="width:5%; background:var(--green);border-radius:6px;"></div>
+        <div class="gap-bar-target" style="left:5%; width:5%;"></div>
+        <div style="position:absolute;top:-14px;left:7.5%;transform:translateX(-50%);font-size:10px;color:var(--gray);">target 5-10%</div>
+      </div>
+      <div class="gap-delta ok">On target</div>
+    </div>
+  </div>
+
+  <!-- Content Domain Distribution -->
+  <div class="card">
+    <h2>Content Domain Distribution: Actual vs. NGSS Expected</h2>
+    <div class="card-subtitle">Based on Grade 4 NGSS Performance Expectation counts — G4 domain targets: PS=41%, LS=12%, ESS=29%, ETS=18%</div>
+
+    <!-- Side-by-side stacked bars -->
+    <div class="comparison-section" style="margin-bottom:8px;">
+      <div style="background:transparent;border:none;box-shadow:none;padding:0;">
+        <div style="font-size:13px;font-weight:600;margin-bottom:6px;">Actual Content Distribution</div>
+        <div class="stacked-bar">
+          <div class="stacked-segment" style="width:36%;background:#5b6abf;">36% PS</div>
+          <div class="stacked-segment" style="width:23%;background:#16a085;">23% LS</div>
+          <div class="stacked-segment" style="width:32%;background:#d35400;">32% ESS</div>
+          <div class="stacked-segment" style="width:9%;background:#8e44ad;font-size:9px;">9%</div>
+        </div>
+      </div>
+      <div style="background:transparent;border:none;box-shadow:none;padding:0;">
+        <div style="font-size:13px;font-weight:600;margin-bottom:6px;">NGSS Expected (by PE Count)</div>
+        <div class="stacked-bar">
+          <div class="stacked-segment" style="width:41%;background:#5b6abf;">41% PS</div>
+          <div class="stacked-segment" style="width:12%;background:#16a085;font-size:9px;">12%</div>
+          <div class="stacked-segment" style="width:29%;background:#d35400;">29% ESS</div>
+          <div class="stacked-segment" style="width:18%;background:#8e44ad;">18% ETS</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Domain legend -->
+    <div style="text-align:center; margin-bottom:20px;">
+      <div class="legend" style="justify-content:center;">
+        <div class="legend-item"><div class="legend-dot" style="background:#5b6abf"></div>Physical Science (PS)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#16a085"></div>Life Science (LS)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#d35400"></div>Earth & Space Science (ESS)</div>
+        <div class="legend-item"><div class="legend-dot" style="background:#8e44ad"></div>Engineering & Technology (ETS)</div>
+      </div>
+    </div>
+
+    <!-- Gap rows -->
+    <div style="font-size:13px;font-weight:700;color:var(--primary);margin-bottom:8px;">Domain Gap Analysis</div>
+    <div class="gap-row" style="border-bottom:none; padding-bottom:0;">
+      <div class="gap-label" style="font-size:11px; color:var(--gray);">DOMAIN</div>
+      <div style="display:flex; justify-content:space-between; font-size:11px; color:var(--gray);"><span>0%</span><span>15%</span><span>30%</span><span>45%</span><span>60%</span></div>
+      <div style="font-size:11px; color:var(--gray); text-align:center;">GAP</div>
+    </div>
+    <div class="gap-row">
+      <div class="gap-label" style="color:#5b6abf;">Physical Sci</div>
+      <div class="gap-bar-container">
+        <div class="gap-bar-actual" style="width:60%; background:#5b6abf;border-radius:6px;"></div>
+        <div class="gap-bar-target" style="left:66%; width:4%;border:2px dashed rgba(0,0,0,0.3);border-radius:6px;"></div>
+        <div style="position:absolute;top:-14px;left:68%;transform:translateX(-50%);font-size:10px;color:var(--gray);">target 41%</div>
+      </div>
+      <div class="gap-delta under">-5% under</div>
+    </div>
+    <div class="gap-row">
+      <div class="gap-label" style="color:#16a085;">Life Science</div>
+      <div class="gap-bar-container">
+        <div class="gap-bar-actual" style="width:38.3%; background:#16a085;border-radius:6px;"></div>
+        <div class="gap-bar-target" style="left:19%; width:4%;border:2px dashed rgba(0,0,0,0.3);border-radius:6px;"></div>
+        <div style="position:absolute;top:-14px;left:21%;transform:translateX(-50%);font-size:10px;color:var(--gray);">target 12%</div>
+      </div>
+      <div class="gap-delta over">+11% over</div>
+    </div>
+    <div class="gap-row">
+      <div class="gap-label" style="color:#d35400;">Earth & Space</div>
+      <div class="gap-bar-container">
+        <div class="gap-bar-actual" style="width:53.3%; background:#d35400;border-radius:6px;"></div>
+        <div class="gap-bar-target" style="left:46.7%; width:4%;border:2px dashed rgba(0,0,0,0.3);border-radius:6px;"></div>
+        <div style="position:absolute;top:-14px;left:48.7%;transform:translateX(-50%);font-size:10px;color:var(--gray);">target 29%</div>
+      </div>
+      <div class="gap-delta ok">+3% over</div>
+    </div>
+    <div class="gap-row">
+      <div class="gap-label" style="color:#8e44ad;">Engineering</div>
+      <div class="gap-bar-container">
+        <div class="gap-bar-actual" style="width:15%; background:#8e44ad;border-radius:6px;"></div>
+        <div class="gap-bar-target" style="left:29%; width:4%;border:2px dashed rgba(0,0,0,0.3);border-radius:6px;"></div>
+        <div style="position:absolute;top:-14px;left:31%;transform:translateX(-50%);font-size:10px;color:var(--gray);">target 18%</div>
+      </div>
+      <div class="gap-delta under">-9% under</div>
+    </div>
+
+    <!-- Domain detail counts -->
+    <div style="margin-top:16px; display:grid; grid-template-columns:repeat(4,1fr); gap:12px;">
+      <div style="text-align:center; padding:12px; border-radius:8px; background:#ecedf8; border:1px solid #5b6abf;">
+        <div style="font-size:11px; font-weight:600; color:#5b6abf; margin-bottom:2px;">PHYSICAL SCIENCE</div>
+        <div style="font-size:20px; font-weight:800; color:#5b6abf;">8</div>
+        <div style="font-size:11px; color:var(--gray);">36% (target 41%)</div>
+        <div style="font-size:10px; color:var(--gray); margin-top:4px;">Q1,14,15,16,17,18,19,21</div>
+      </div>
+      <div style="text-align:center; padding:12px; border-radius:8px; background:#e8f6f3; border:1px solid #16a085;">
+        <div style="font-size:11px; font-weight:600; color:#16a085; margin-bottom:2px;">LIFE SCIENCE</div>
+        <div style="font-size:20px; font-weight:800; color:#16a085;">5</div>
+        <div style="font-size:11px; color:var(--gray);">23% (target 12%)</div>
+        <div style="font-size:10px; color:var(--gray); margin-top:4px;">Q2,3,4,5,6</div>
+      </div>
+      <div style="text-align:center; padding:12px; border-radius:8px; background:#fdf2e9; border:1px solid #d35400;">
+        <div style="font-size:11px; font-weight:600; color:#d35400; margin-bottom:2px;">EARTH & SPACE</div>
+        <div style="font-size:20px; font-weight:800; color:#d35400;">7</div>
+        <div style="font-size:11px; color:var(--gray);">32% (target 29%)</div>
+        <div style="font-size:10px; color:var(--gray); margin-top:4px;">Q7,8,9,10,11,20,22</div>
+      </div>
+      <div style="text-align:center; padding:12px; border-radius:8px; background:#f4ecf7; border:1px solid #8e44ad;">
+        <div style="font-size:11px; font-weight:600; color:#8e44ad; margin-bottom:2px;">ENGINEERING</div>
+        <div style="font-size:20px; font-weight:800; color:#8e44ad;">2</div>
+        <div style="font-size:11px; color:var(--gray);">9% (target 18%)</div>
+        <div style="font-size:10px; color:var(--gray); margin-top:4px;">Q12,13</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Indicator scores -->
+  <div class="card">
+    <h2>Indicator Scores (Average Across All 22 Questions)</h2>
+    <div class="card-subtitle">Achieve Cognitive Complexity Framework — Scale: 1 (Low) to 5 (High). Target for balanced assessment: ~3.0</div>
+
+    <!-- Indicator Key -->
+    <div style="background:var(--gray-light); border:1px solid var(--gray-border); border-radius:8px; padding:16px 20px; margin-bottom:16px; font-size:13px; line-height:1.5;">
+      <div style="font-weight:700; color:var(--primary); margin-bottom:8px;">What Are These Four Indicators?</div>
+      <p style="font-size:12px; color:var(--gray); margin-bottom:10px;">Achieve's Cognitive Complexity Framework scores every assessment question on four dimensions. Together, these four scores determine the holistic classification (Scripted &rarr; Doing Science). A score of 1 means no engagement; 5 means deep, authentic engagement.</p>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+        <div style="padding:10px 12px; background:white; border-radius:6px; border:1px solid var(--gray-border);">
+          <strong style="color:var(--primary);">Scenario</strong> <span style="font-size:11px; color:var(--gray);">(Score: 2.4 avg)</span><br>
+          <span style="color:var(--gray); font-size:12px;">Does the question present a <em>phenomenon</em> — something puzzling, observable, or real-world — that the student needs to figure out? A score of 1 means no context at all ("Define photosynthesis"). A score of 5 means a rich, novel scenario the student hasn't seen before.</span>
+        </div>
+        <div style="padding:10px 12px; background:white; border-radius:6px; border:1px solid var(--gray-border);">
+          <strong style="color:var(--primary);">SEP — Science &amp; Engineering Practices</strong> <span style="font-size:11px; color:var(--gray);">(Score: 2.3 avg)</span><br>
+          <span style="color:var(--gray); font-size:12px;">Does the question require the student to <em>do</em> something a scientist would do — analyze data, construct an explanation, argue from evidence, plan an investigation? A score of 1 means pure recall. A score of 5 means the student independently selects and applies a practice to solve a problem.</span>
+        </div>
+        <div style="padding:10px 12px; background:white; border-radius:6px; border:1px solid var(--gray-border);">
+          <strong style="color:var(--primary);">DCI — Disciplinary Core Ideas</strong> <span style="font-size:11px; color:var(--gray);">(Score: 2.6 avg)</span><br>
+          <span style="color:var(--gray); font-size:12px;">How deeply does the question engage the science content? A score of 1 means recalling a definition. A score of 5 means applying core ideas to a new situation and connecting them across topics. For example: not just "What is a food chain?" but "Use this food web to predict what happens when one species is removed."</span>
+        </div>
+        <div style="padding:10px 12px; background:white; border-radius:6px; border:1px solid var(--gray-border);">
+          <strong style="color:var(--primary);">CCC — Crosscutting Concepts</strong> <span style="font-size:11px; color:var(--gray);">(Score: 2.2 avg)</span><br>
+          <span style="color:var(--gray); font-size:12px;">Does the question require the student to use a big-picture thinking lens like <em>Cause &amp; Effect</em>, <em>Patterns</em>, <em>Structure &amp; Function</em>, <em>Systems</em>, or <em>Scale</em>? These are the transferable thinking tools NGSS says students need across all science domains. A score of 1 means no CCC is engaged at all. This is G4.12's weakest area.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="indicator-grid">
+      <div class="indicator-card">
+        <div class="indicator-name">Scenario</div>
+        <div class="indicator-ring" style="background: conic-gradient(var(--yellow) 0% 48%, var(--gray-light) 48% 100%);">
+          <div class="indicator-score" style="color:var(--yellow);">2.4</div>
+        </div>
+        <div class="indicator-max">of 5.0</div>
+        <div class="indicator-target">Many questions present real scenarios</div>
+      </div>
+      <div class="indicator-card">
+        <div class="indicator-name">SEP (Practices)</div>
+        <div class="indicator-ring" style="background: conic-gradient(var(--yellow) 0% 46%, var(--gray-light) 46% 100%);">
+          <div class="indicator-score" style="color:var(--yellow);">2.3</div>
+        </div>
+        <div class="indicator-max">of 5.0</div>
+        <div class="indicator-target">Basic practice use — mostly selecting answers</div>
+      </div>
+      <div class="indicator-card">
+        <div class="indicator-name">DCI (Core Ideas)</div>
+        <div class="indicator-ring" style="background: conic-gradient(var(--yellow) 0% 53%, var(--gray-light) 53% 100%);">
+          <div class="indicator-score" style="color:var(--yellow);">2.6</div>
+        </div>
+        <div class="indicator-max">of 5.0</div>
+        <div class="indicator-target">Strongest indicator — some applied reasoning</div>
+      </div>
+      <div class="indicator-card">
+        <div class="indicator-name">CCC (Crosscutting)</div>
+        <div class="indicator-ring" style="background: conic-gradient(var(--red) 0% 44%, var(--gray-light) 44% 100%);">
+          <div class="indicator-score" style="color:var(--red);">2.2</div>
+        </div>
+        <div class="indicator-max">of 5.0</div>
+        <div class="indicator-target">Weakest — often implicit, rarely required</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Content redundancy flags -->
+  <div class="card">
+    <h2>Content Coverage Flags</h2>
+    <div class="card-subtitle">Issues with construct redundancy and topic balance</div>
+    <ul class="flag-list">
+      <li class="flag-item"><strong>Energy Conversion Cluster — 5 questions (Q15, Q16, Q17, Q18, Q19)</strong><br>23% of the test is concentrated on energy conversion topics (4-PS3-2 and 4-PS3-4). Q16 (microwave energy conversion), Q17 (doorbell circuit), and Q19 (device recall) are all at Scripted or low Low Guided level. Reduce to 3 items and increase complexity on the remaining ones.</li>
+      <li class="flag-item"><strong>Internal Structures Cluster — 4 questions (Q2, Q3, Q4, Q5)</strong><br>18% of the test covers 4-LS1-1 (internal and external structures). Q3 is pure recall ("Which internal structure helps fish get oxygen?"). Q4 and Q5 are stronger with real phenomena. Remove Q2 (amphibian classification recall) and Q3 (fish gills recall); keep Q4 and Q5.</li>
+      <li class="flag-item"><strong>Duplicate: Topographic Map Reading — 2 questions (Q10, Q11)</strong><br>Both ask students to identify landforms from topographic maps. Q10 interprets concentric circles; Q11 identifies a landform at a marked point. These test the same skill. Keep one, replace the other with a question requiring map comparison or change-over-time reasoning.</li>
+      <li class="flag-item"><strong>Erosion Cluster — 3 questions (Q8, Q9, Q22)</strong><br>Three questions on 4-ESS2-1 (erosion processes). Q8 (water erosion on trail) and Q22 (erosion solution) are solid Low Guided items. Q9 (wind erosion true statement) is Scripted recall. Remove Q9 and use the slot for an under-represented domain.</li>
+      <li class="flag-item warn"><strong>No High Guided Questions</strong><br>Zero questions reach High Guided complexity. The gap from Low Guided (64%) directly to Doing Science (5%) leaves a critical reasoning tier completely unrepresented. Achieve targets 20-30% at High Guided level.</li>
+      <li class="flag-item warn"><strong>Engineering Under-represented</strong><br>Only 2 ETS questions (9%) versus the 18% NGSS target. However, Q12 is the highest-quality item on the test (the only "Good" rating and the only Doing Science item). Adding 1-2 more ETS items at similar quality would strengthen the test significantly.</li>
+    </ul>
+  </div>
+
+  <!-- Criteria assessment summary -->
+  <div class="card">
+    <h2>Achieve Assessment Criteria Summary</h2>
+    <div class="card-subtitle">Criteria for Procuring and Evaluating High-Quality Science Assessments (2018)</div>
+
+    <!-- Criteria Key -->
+    <div style="background:var(--gray-light); border:1px solid var(--gray-border); border-radius:8px; padding:16px 20px; margin-bottom:16px; font-size:13px; line-height:1.5;">
+      <div style="font-weight:700; color:var(--primary); margin-bottom:8px;">What Do These Criteria Measure?</div>
+      <p style="font-size:12px; color:var(--gray); margin-bottom:10px;">Achieve published 7 criteria for evaluating science assessments. The 4 most relevant to individual question quality are shown below. Each question is rated: <strong style="color:var(--green);">Meets</strong>, <strong style="color:var(--yellow);">Partially Meets</strong>, or <strong style="color:var(--red);">Does Not Meet</strong>.</p>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:8px;">
+        <div style="padding:10px 12px; background:white; border-radius:6px; border:1px solid var(--gray-border);">
+          <strong style="color:var(--primary);">Criterion 2: Three-Dimensional</strong><br>
+          <span style="color:var(--gray); font-size:12px;">Does the question require students to use all three NGSS dimensions together — a Science/Engineering Practice (SEP), a Disciplinary Core Idea (DCI), and a Crosscutting Concept (CCC)? A question that only tests vocabulary is <em>not</em> three-dimensional.</span>
+        </div>
+        <div style="padding:10px 12px; background:white; border-radius:6px; border:1px solid var(--gray-border);">
+          <strong style="color:var(--primary);">Criterion 3: Phenomena / Problems</strong><br>
+          <span style="color:var(--gray); font-size:12px;">Is the question anchored in a real-world phenomenon (something observable that needs explaining) or an engineering problem? Students should be figuring out <em>why</em> or <em>how</em> something happens, not just recalling a definition.</span>
+        </div>
+        <div style="padding:10px 12px; background:white; border-radius:6px; border:1px solid var(--gray-border);">
+          <strong style="color:var(--primary);">Criterion 5: Cognitive Complexity</strong><br>
+          <span style="color:var(--gray); font-size:12px;">Does the question require real thinking? It should go beyond recall (DOK1) and ask students to analyze, evaluate, or construct explanations. Achieve's standard: an NGSS-aligned assessment should have <strong>0% pure recall</strong> items.</span>
+        </div>
+        <div style="padding:10px 12px; background:white; border-radius:6px; border:1px solid var(--gray-border);">
+          <strong style="color:var(--primary);">Criterion 6: Technical Quality</strong><br>
+          <span style="color:var(--gray); font-size:12px;">Is the question well-constructed? Scientifically accurate content, clear wording, plausible distractors (wrong answers that reveal real misconceptions), no cueing or trick phrasing. A question can be technically sound but still too simple.</span>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:12px; margin-bottom:16px;">
+      <div style="text-align:center; padding:16px; border-radius:8px; background:var(--yellow-bg); border:1px solid var(--yellow);">
+        <div style="font-size:11px; font-weight:600; color:var(--yellow); margin-bottom:4px;">CRIT 2: Three-Dimensional</div>
+        <div style="font-size:24px; font-weight:800; color:var(--yellow);">12</div>
+        <div style="font-size:11px; color:var(--gray);">of 22 partially or fully meet</div>
+      </div>
+      <div style="text-align:center; padding:16px; border-radius:8px; background:var(--yellow-bg); border:1px solid var(--yellow);">
+        <div style="font-size:11px; font-weight:600; color:var(--yellow); margin-bottom:4px;">CRIT 3: Phenomena</div>
+        <div style="font-size:24px; font-weight:800; color:var(--yellow);">12</div>
+        <div style="font-size:11px; color:var(--gray);">of 22 partially or fully meet</div>
+      </div>
+      <div style="text-align:center; padding:16px; border-radius:8px; background:var(--yellow-bg); border:1px solid var(--yellow);">
+        <div style="font-size:11px; font-weight:600; color:var(--yellow); margin-bottom:4px;">CRIT 5: Complexity</div>
+        <div style="font-size:24px; font-weight:800; color:var(--yellow);">12</div>
+        <div style="font-size:11px; color:var(--gray);">of 22 partially meet</div>
+      </div>
+      <div style="text-align:center; padding:16px; border-radius:8px; background:var(--green-bg); border:1px solid var(--green);">
+        <div style="font-size:11px; font-weight:600; color:var(--green); margin-bottom:4px;">CRIT 6: Technical Quality</div>
+        <div style="font-size:24px; font-weight:800; color:var(--green);">22</div>
+        <div style="font-size:11px; color:var(--gray);">of 22 meet or partially</div>
+      </div>
+    </div>
+    <div class="callout info">
+      <h3>Best Technical Quality in the Series — But Cognitive Depth Still Lagging</h3>
+      <p>Every question on G4.12 meets or partially meets Criterion 6 (Technical Quality), with 18 of 22 fully meeting. This is the strongest technical performance seen so far. The challenge remains cognitive depth: only 1 question fully meets Criterion 2 (Three-Dimensional) and only 1 fully meets Criterion 3 (Phenomena). The test is well-constructed but still asks students to reason at lower levels than Achieve and MAP expect.</p>
+    </div>
+  </div>
+
+  <!-- MAP Alignment Recommendations -->
+  <div class="card">
+    <h2>Recommendations: Aligning G4.12 to MAP Expectations</h2>
+    <div class="card-subtitle">Specific changes to prepare students for the kinds of thinking MAP Science requires. G4.12 has a stronger foundation than most G3 assessments, making targeted improvements especially impactful.</div>
+
+    <!-- Impact summary -->
+    <div class="rec-summary-bar">
+      <div class="rec-summary-item" style="background:#fdecea; border:1px solid var(--red);">
+        <div style="font-size:11px; font-weight:600; color:var(--red);">REMOVE OR REPLACE</div>
+        <div style="font-size:28px; font-weight:800; color:var(--red);">5</div>
+        <div style="font-size:11px; color:var(--gray);">questions (redundant or recall-only)</div>
+      </div>
+      <div class="rec-summary-item" style="background:#fef9e7; border:1px solid var(--yellow);">
+        <div style="font-size:11px; font-weight:600; color:var(--yellow);">REDESIGN</div>
+        <div style="font-size:28px; font-weight:800; color:var(--yellow);">6</div>
+        <div style="font-size:11px; color:var(--gray);">questions (deepen reasoning demand)</div>
+      </div>
+      <div class="rec-summary-item" style="background:#eafaf1; border:1px solid var(--green);">
+        <div style="font-size:11px; font-weight:600; color:var(--green);">KEEP AS-IS</div>
+        <div style="font-size:28px; font-weight:800; color:var(--green);">11</div>
+        <div style="font-size:11px; color:var(--gray);">questions (already Low Guided or above)</div>
+      </div>
+    </div>
+
+    <!-- Priority 1: Eliminate redundancy -->
+    <div class="rec-section">
+      <div class="rec-section-title">Priority 1: Eliminate Redundancy and Pure Recall (Free 5 Question Slots)</div>
+      <div class="rec-grid">
+        <div class="rec-item">
+          <div class="rec-num">1</div>
+          <div>
+            <div class="rec-title">Remove Scripted recall questions with no scenario</div>
+            <div class="rec-detail">Q3 (fish gills — pure organ recall), Q19 (which device converts energy — no context), and Q20 (least negative impact on air quality — no data). These three questions score 1.25 each and engage zero science practices. Replace with phenomenon-anchored items.</div>
+            <span class="rec-impact high">Frees 3 question slots</span>
+          </div>
+        </div>
+        <div class="rec-item">
+          <div class="rec-num">2</div>
+          <div>
+            <div class="rec-title">Remove duplicate topographic map and weak erosion items</div>
+            <div class="rec-detail"><strong>Topographic maps (Q10 &amp; Q11):</strong> Both test the same map-reading skill. Keep Q10 (concentric circles interpretation), remove Q11. <strong>Wind erosion (Q9):</strong> Interesting rock shape phenomenon wasted on a true/false-style question. Remove and replace with a question that asks students to explain WHY desert rocks are shaped that way.</div>
+            <span class="rec-impact high">Frees 2 more question slots</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Priority 2: Add phenomena -->
+    <div class="rec-section">
+      <div class="rec-section-title">Priority 2: Anchor Recall Items in Phenomena</div>
+      <div class="rec-grid">
+        <div class="rec-item">
+          <div class="rec-num">3</div>
+          <div>
+            <div class="rec-title">Transform energy conversion recall into data-driven reasoning</div>
+            <div class="rec-detail">Q16 (microwave observation matching) and Q17 (doorbell circuit description) are technically about energy but only require selecting the correct statement. MAP presents energy scenarios with data and asks students to trace, predict, or explain.</div>
+            <div class="rec-before-after">
+              <div>
+                <div class="rec-example-label before">Current (Scripted)</div>
+                "Which observation shows conversion of electrical energy to heat energy?"
+              </div>
+              <div class="rec-arrow">&rarr;</div>
+              <div>
+                <div class="rec-example-label after">Redesigned (High Guided)</div>
+                "A student measures the temperature inside a microwave every 30 seconds. The table shows the results. Based on the data pattern, what is happening to the electrical energy? Explain how you know energy is being converted."
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="rec-item">
+          <div class="rec-num">4</div>
+          <div>
+            <div class="rec-title">Upgrade amphibian classification to evidence-based reasoning</div>
+            <div class="rec-detail">Q2 asks students to classify known animals as amphibians — pure recall of animal groups. MAP would present unfamiliar organism data and require classification using structural evidence.</div>
+            <div class="rec-before-after">
+              <div>
+                <div class="rec-example-label before">Current (Scripted)</div>
+                "Which TWO animals can be classified as amphibians?" [Salamanders and frogs]
+              </div>
+              <div class="rec-arrow">&rarr;</div>
+              <div>
+                <div class="rec-example-label after">Redesigned (High Guided)</div>
+                "Scientists discovered a new animal. The table shows its characteristics: moist skin, lays eggs in water, breathes through lungs as adult. Based on these structural features, which animal group does it most likely belong to? Which feature provides the strongest evidence? Explain."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Priority 3: Three-dimensional -->
+    <div class="rec-section">
+      <div class="rec-section-title">Priority 3: Make Questions Three-Dimensional</div>
+      <div class="rec-grid">
+        <div class="rec-item">
+          <div class="rec-num">5</div>
+          <div>
+            <div class="rec-title">Engage Crosscutting Concepts explicitly — currently at 2.2/5 (weakest indicator)</div>
+            <div class="rec-detail">CCC is the weakest dimension across the test. Many questions implicitly involve Cause and Effect or Structure and Function but do not require students to reason with these lenses. Add explicit CCC prompts: "What caused...?", "How does this structure help...?", "What pattern do you notice in the data?"</div>
+            <span class="rec-impact high">Biggest single-indicator gap</span>
+          </div>
+        </div>
+        <div class="rec-item">
+          <div class="rec-num">6</div>
+          <div>
+            <div class="rec-title">Add data interpretation to sensory processing question</div>
+            <div class="rec-detail">Q6 (dog hearing) tests recall of how nerves transmit signals. MAP would present a scenario where different stimuli produce different responses and ask students to model the full pathway from stimulus to response.</div>
+            <div class="rec-before-after">
+              <div>
+                <div class="rec-example-label before">Current (Scripted)</div>
+                "How does the information about the sound get from the dog's ears to its brain?"
+              </div>
+              <div class="rec-arrow">&rarr;</div>
+              <div>
+                <div class="rec-example-label after">Redesigned (High Guided)</div>
+                "A dog responds differently to a whistle vs. a clap: it comes when it hears the whistle but ignores the clap. Both sounds enter its ears. Using what you know about how sensory information travels, explain why the dog responds differently to these two sounds."
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Priority 4: Domain balance -->
+    <div class="rec-section">
+      <div class="rec-section-title">Priority 4: Improve Domain Balance</div>
+      <div class="rec-grid">
+        <div class="rec-item">
+          <div class="rec-num">7</div>
+          <div>
+            <div class="rec-title">Use freed slots to add ETS and PS questions</div>
+            <div class="rec-detail">After removing 5 redundant/recall questions, use freed slots to address under-represented domains:
+              <ul style="margin:8px 0 0 16px; color:var(--gray);">
+                <li><strong style="color:#8e44ad;">+2 ETS:</strong> Engineering design with quantitative trade-offs (3-5-ETS1-2), iterative testing with data (3-5-ETS1-3). Build on the strength of Q12 (the best item on the test).</li>
+                <li><strong style="color:#5b6abf;">+1 PS:</strong> Add a wave property investigation with data (4-PS4-1) or energy transfer measurement question (4-PS3-2).</li>
+                <li><strong style="color:#d35400;">+2 ESS:</strong> Replace removed erosion/map items with higher-complexity ESS — e.g., interpreting geological evidence of environmental change (4-ESS1-1), or analyzing natural hazard data (4-ESS3-2).</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Priority 5: Upper complexity -->
+    <div class="rec-section">
+      <div class="rec-section-title">Priority 5: Fill the High Guided Gap</div>
+      <div class="rec-grid">
+        <div class="rec-item">
+          <div class="rec-num">8</div>
+          <div>
+            <div class="rec-title">Upgrade 5-6 Low Guided questions to High Guided (currently 0%)</div>
+            <div class="rec-detail">The complete absence of High Guided items is the most critical gap. Q4 (penguin diving), Q5 (cactus survival), Q14 (car speed/energy), and Q15 (heat transfer) are all strong Low Guided items that could be elevated to High Guided by adding novel data, requiring multi-step reasoning, or asking students to evaluate competing claims.</div>
+            <span class="rec-impact high">Currently at 0% vs. 20-30% target</span>
+          </div>
+        </div>
+        <div class="rec-item">
+          <div class="rec-num">9</div>
+          <div>
+            <div class="rec-title">Add multi-part item sets</div>
+            <div class="rec-detail">MAP frequently uses linked questions where Part A tests identification and Part B requires explanation or evidence-based reasoning. G4.12 has no multi-part items. Convert the best scenarios (Q4 penguin diving, Q12 coastal protection, Q14 car energy) into 2-part items to reach High Guided and Doing Science levels.</div>
+            <span class="rec-impact med">Mirrors MAP item design</span>
+          </div>
+        </div>
+        <div class="rec-item">
+          <div class="rec-num">10</div>
+          <div>
+            <div class="rec-title">Scale up data representation across the test</div>
+            <div class="rec-detail">Q10 (topographic map), Q12 (coastal protection data), and Q14 (car speed data) are among the strongest items because they embed data. MAP includes tables, graphs, diagrams, or models in nearly every item. Increase data representation coverage to at least 60% of questions.</div>
+            <span class="rec-impact med">Builds critical MAP skill</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projected impact -->
+    <div style="background:var(--primary-light); border:1px solid var(--primary); border-radius:8px; padding:16px 20px; margin-top:8px;">
+      <h3 style="font-size:14px; color:var(--primary); margin-bottom:8px;">Projected Impact If All Recommendations Are Implemented</h3>
+      <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:12px; font-size:13px;">
+        <div>
+          <div style="font-weight:700; color:var(--gray); font-size:11px;">SCRIPTED</div>
+          <div><span style="color:var(--red); font-weight:700;">32%</span> <span style="color:var(--gray);">&rarr;</span> <span style="color:var(--green); font-weight:700;">~15%</span></div>
+          <div style="font-size:11px; color:var(--gray);">within target (20-30%)</div>
+        </div>
+        <div>
+          <div style="font-weight:700; color:var(--gray); font-size:11px;">LOW GUIDED</div>
+          <div><span style="color:var(--yellow); font-weight:700;">64%</span> <span style="color:var(--gray);">&rarr;</span> <span style="color:var(--green); font-weight:700;">~45%</span></div>
+          <div style="font-size:11px; color:var(--gray);">within target (40-50%)</div>
+        </div>
+        <div>
+          <div style="font-weight:700; color:var(--gray); font-size:11px;">HIGH GUIDED</div>
+          <div><span style="color:var(--red); font-weight:700;">0%</span> <span style="color:var(--gray);">&rarr;</span> <span style="color:var(--green); font-weight:700;">~30%</span></div>
+          <div style="font-size:11px; color:var(--gray);">within target (20-30%)</div>
+        </div>
+        <div>
+          <div style="font-weight:700; color:var(--gray); font-size:11px;">DOING SCIENCE</div>
+          <div><span style="color:var(--green); font-weight:700;">5%</span> <span style="color:var(--gray);">&rarr;</span> <span style="color:var(--green); font-weight:700;">~10%</span></div>
+          <div style="font-size:11px; color:var(--gray);">within target (5-10%)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Full question table -->
+  <div class="card">
+    <h2>All 22 Questions — Detailed Scores</h2>
+    <div class="card-subtitle">Color coding: <span style="color:var(--red);font-weight:600;">Red = Low (1-2)</span>, <span style="color:var(--yellow);font-weight:600;">Yellow = Medium (3)</span>, <span style="color:var(--green);font-weight:600;">Green = High (4-5)</span></div>
+    <div class="table-scroll">
+      <table class="q-table" id="qTable">
+        <thead>
+          <tr>
+            <th style="width:30px;">Q#</th>
+            <th>Stem</th>
+            <th style="width:40px;">Domain</th>
+            <th style="width:40px;">Scen</th>
+            <th style="width:40px;">SEP</th>
+            <th style="width:40px;">DCI</th>
+            <th style="width:40px;">CCC</th>
+            <th style="width:40px;">Avg</th>
+            <th style="width:100px;">Holistic</th>
+            <th style="width:90px;">Overall</th>
+          </tr>
+        </thead>
+        <tbody id="qTableBody">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Question data
+const questions = [
+  {n:1,stem:"Dark room flashlight — why can Tom see the book?",dom:"PS",sc:3,sep:3,dci:3,ccc:2,avg:2.75,hol:"low-guided",holLabel:"Low Guided",ov:"needs-improvement",ovLabel:"Needs Improvement"},
+  {n:2,stem:"Amphibian characteristics — which TWO animals classified?",dom:"LS",sc:2,sep:2,dci:2,ccc:1,avg:1.75,hol:"scripted",holLabel:"Scripted",ov:"weak",ovLabel:"Weak"},
+  {n:3,stem:"Which internal structure helps fish get oxygen from water?",dom:"LS",sc:1,sep:1,dci:2,ccc:1,avg:1.25,hol:"scripted",holLabel:"Scripted",ov:"weak",ovLabel:"Weak"},
+  {n:4,stem:"Penguin dives underwater — how does it get oxygen?",dom:"LS",sc:3,sep:3,dci:3,ccc:3,avg:3.0,hol:"low-guided",holLabel:"Low Guided",ov:"needs-improvement",ovLabel:"Needs Improvement"},
+  {n:5,stem:"Saguaro cactus — how do waxy coating and stem help survive?",dom:"LS",sc:3,sep:3,dci:3,ccc:3,avg:3.0,hol:"low-guided",holLabel:"Low Guided",ov:"needs-improvement",ovLabel:"Needs Improvement"},
+  {n:6,stem:"Dog hears owner — how does information get to brain?",dom:"LS",sc:2,sep:2,dci:2,ccc:2,avg:2.0,hol:"scripted",holLabel:"Scripted",ov:"weak",ovLabel:"Weak"},
+  {n:7,stem:"Geologist found four rock layers — which organism lived most recently?",dom:"ESS",sc:3,sep:2,dci:3,ccc:2,avg:2.5,hol:"low-guided",holLabel:"Low Guided",ov:"needs-improvement",ovLabel:"Needs Improvement"},
+  {n:8,stem:"Heavy rains cut channel in hiking trail — how did water cause this?",dom:"ESS",sc:3,sep:2,dci:3,ccc:2,avg:2.5,hol:"low-guided",holLabel:"Low Guided",ov:"needs-improvement",ovLabel:"Needs Improvement"},
+  {n:9,stem:"Wind erosion shapes desert rocks — which sentence is true?",dom:"ESS",sc:2,sep:2,dci:2,ccc:2,avg:2.0,hol:"scripted",holLabel:"Scripted",ov:"weak",ovLabel:"Weak"},
+  {n:10,stem:"Topographic map concentric circles 3500 ft — which landform?",dom:"ESS",sc:3,sep:3,dci:3,ccc:2,avg:2.75,hol:"low-guided",holLabel:"Low Guided",ov:"needs-improvement",ovLabel:"Needs Improvement"},
+  {n:11,stem:"Geologist's topographic map — what landform at letter B?",dom:"ESS",sc:3,sep:3,dci:3,ccc:2,avg:2.75,hol:"low-guided",holLabel:"Low Guided",ov:"needs-improvement",ovLabel:"Needs Improvement"},
+  {n:12,stem:"Coastal town storm waves — which solution most effectively protects?",dom:"ETS",sc:4,sep:4,dci:3,ccc:3,avg:3.5,hol:"doing-science",holLabel:"Doing Science",ov:"good",ovLabel:"Good"},
+  {n:13,stem:"Earthquake reinforcement — steel vs. concrete with moderate budget?",dom:"ETS",sc:3,sep:3,dci:3,ccc:3,avg:3.0,hol:"low-guided",holLabel:"Low Guided",ov:"needs-improvement",ovLabel:"Needs Improvement"},
+  {n:14,stem:"Three cars tested — order from highest to lowest energy of motion?",dom:"PS",sc:3,sep:3,dci:3,ccc:3,avg:3.0,hol:"low-guided",holLabel:"Low Guided",ov:"needs-improvement",ovLabel:"Needs Improvement"},
+  {n:15,stem:"Hot and cold metal spoons touching — what will happen?",dom:"PS",sc:3,sep:2,dci:3,ccc:3,avg:2.75,hol:"low-guided",holLabel:"Low Guided",ov:"needs-improvement",ovLabel:"Needs Improvement"},
+  {n:16,stem:"Microwave oven observations — which shows electrical to heat conversion?",dom:"PS",sc:2,sep:2,dci:2,ccc:2,avg:2.0,hol:"scripted",holLabel:"Scripted",ov:"weak",ovLabel:"Weak"},
+  {n:17,stem:"Doorbell circuit — which describes the energy changes?",dom:"PS",sc:2,sep:2,dci:3,ccc:2,avg:2.25,hol:"low-guided",holLabel:"Low Guided",ov:"needs-improvement",ovLabel:"Needs Improvement"},
+  {n:18,stem:"Bicycle brakes — what type of energy converted to heat?",dom:"PS",sc:3,sep:2,dci:3,ccc:2,avg:2.5,hol:"low-guided",holLabel:"Low Guided",ov:"needs-improvement",ovLabel:"Needs Improvement"},
+  {n:19,stem:"Which device converts energy of motion into electrical energy?",dom:"PS",sc:1,sep:1,dci:2,ccc:1,avg:1.25,hol:"scripted",holLabel:"Scripted",ov:"weak",ovLabel:"Weak"},
+  {n:20,stem:"Which energy use has LEAST negative impact on air quality?",dom:"ESS",sc:1,sep:1,dci:2,ccc:1,avg:1.25,hol:"scripted",holLabel:"Scripted",ov:"weak",ovLabel:"Weak"},
+  {n:21,stem:"Maria strikes drum softly then hard — how do sound waves change?",dom:"PS",sc:3,sep:2,dci:3,ccc:3,avg:2.75,hol:"low-guided",holLabel:"Low Guided",ov:"needs-improvement",ovLabel:"Needs Improvement"},
+  {n:22,stem:"Soil washes off steep hill — which solution BEST keeps soil in place?",dom:"ESS",sc:3,sep:3,dci:3,ccc:3,avg:3.0,hol:"low-guided",holLabel:"Low Guided",ov:"needs-improvement",ovLabel:"Needs Improvement"}
+];
+
+// Render table
+const tbody = document.getElementById('qTableBody');
+const domColors = {LS:'#16a085', PS:'#5b6abf', ESS:'#d35400', ETS:'#8e44ad'};
+questions.forEach(q => {
+  const scoreClass = (v) => v <= 2 ? 'low' : v === 3 ? 'med' : 'high';
+  const row = document.createElement('tr');
+  row.innerHTML = `
+    <td style="font-weight:700;">${q.n}</td>
+    <td class="stem-cell" title="${q.stem}">${q.stem}</td>
+    <td style="text-align:center;"><span style="display:inline-block;padding:2px 8px;border-radius:10px;font-size:10px;font-weight:700;color:white;background:${domColors[q.dom]}">${q.dom}</span></td>
+    <td class="score-cell ${scoreClass(q.sc)}">${q.sc}</td>
+    <td class="score-cell ${scoreClass(q.sep)}">${q.sep}</td>
+    <td class="score-cell ${scoreClass(q.dci)}">${q.dci}</td>
+    <td class="score-cell ${scoreClass(q.ccc)}">${q.ccc}</td>
+    <td class="score-cell ${scoreClass(Math.round(q.avg))}">${q.avg.toFixed(1)}</td>
+    <td><span class="q-badge ${q.hol}">${q.holLabel}</span></td>
+    <td><span class="q-badge ${q.ov}">${q.ovLabel}</span></td>
+  `;
+  tbody.appendChild(row);
+});
+</script>
+</body>
+</html>
